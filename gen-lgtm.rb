@@ -7,16 +7,16 @@ class GenLgtm < Formula
 
   if OS.mac?
     url "http://github.com/8398a7/gen-lgtm/releases/download/v1.0.0/gen-lgtm_darwin_amd64.tar.gz"
-    sha256 "dc4b3006da82b6d628dd68645a73682c5b7ba39731007fcfdd35fe1640b18b3c"
+    sha256 "f6dedc7715d358db12647fee508d01008093d4cf9aa631d7fca567e77ef4bb9e"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "http://github.com/8398a7/gen-lgtm/releases/download/v1.0.0/gen-lgtm_linux_amd64.tar.gz"
-      sha256 "ca78a461b8f90208a63108f81296ac1fbfade3bd6ecfc8785f3902405fa77a1c"
+      sha256 "dbb44d4243989a5f2a50994f55542c8d7187cba26a2da26700bfb6cd52d8b936"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "http://github.com/8398a7/gen-lgtm/releases/download/v1.0.0/gen-lgtm_linux_arm64.tar.gz"
-        sha256 "c15e540f4fa39e633034113be1f8549ac90e39b4c6f5e5d33c0b9ca80bf35552"
+        sha256 "1011fccd258372bb99c39a1b5ebee6ec4b51badeae60c52339acbc97693af545"
       else
       end
     end
